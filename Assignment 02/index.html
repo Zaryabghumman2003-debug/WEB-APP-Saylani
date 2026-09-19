@@ -1,0 +1,400 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Explore the world of Pokémon! Get the latest news, play games, explore the Pokédex, and collect Trading Cards.">
+    <title>Pokémon | Explore the World of Pokémon</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;800;900&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Mobile Menu Toggle (checkbox hack) -->
+    <input type="checkbox" id="menu-toggle" class="menu-toggle-checkbox">
+
+    <!-- Top Bar -->
+    <div class="top-bar">
+        <div class="container">
+            <div class="top-bar-left">
+                <a href="#">Customer Service</a>
+                <a href="#">Pokémon Newsletter</a>
+            </div>
+            <div class="top-bar-right">
+                <a href="#">🌐 United States</a>
+                <a href="#" class="trainer-btn">👤 Trainer Club</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Header -->
+    <header class="header">
+        <div class="container header-inner">
+            <a href="#" class="logo">
+                <span class="logo-text">Pokémon</span>
+            </a>
+
+            <nav class="nav">
+                <ul class="nav-list">
+                    <li><a href="#pokedex">📖 Pokédex</a></li>
+                    <li><a href="#news">📰 News</a></li>
+                    <li class="has-dropdown">
+                        <a href="#games">🎮 Video Games ▾</a>
+                        <ul class="dropdown">
+                            <li><a href="#">Pokémon Scarlet & Violet</a></li>
+                            <li><a href="#">Pokémon Legends</a></li>
+                            <li><a href="#">Pokémon GO</a></li>
+                            <li><a href="#">Pokémon UNITE</a></li>
+                        </ul>
+                    </li>
+                    <li class="has-dropdown">
+                        <a href="#tcg">🃏 Trading Card Game ▾</a>
+                        <ul class="dropdown">
+                            <li><a href="#">Card Database</a></li>
+                            <li><a href="#">TCG Live</a></li>
+                            <li><a href="#">Expansions</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#">📺 Pokémon TV</a></li>
+                    <li><a href="#">🏆 Play!</a></li>
+                </ul>
+            </nav>
+
+            <label for="menu-toggle" class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </label>
+        </div>
+    </header>
+
+    <!-- Mobile Menu Overlay -->
+    <label for="menu-toggle" class="mobile-overlay"></label>
+    <div class="mobile-menu">
+        <div class="mobile-menu-top">
+            <span>Menu</span>
+            <label for="menu-toggle" class="close-btn">&times;</label>
+        </div>
+        <nav class="mobile-nav">
+            <a href="#pokedex">📖 Pokédex</a>
+            <a href="#news">📰 News</a>
+            <a href="#games">🎮 Video Games</a>
+            <a href="#tcg">🃏 Trading Card Game</a>
+            <a href="#">📺 Pokémon TV</a>
+            <a href="#">🏆 Play!</a>
+        </nav>
+        <a href="#" class="mobile-cta">Join Trainer Club</a>
+    </div>
+
+    <main>
+
+        <!-- Hero Section -->
+        <section class="hero">
+            <div class="hero-slide" style="background-image: url('assets/hero_banner_1.jpg');">
+                <div class="hero-overlay"></div>
+                <div class="hero-content">
+                    <span class="hero-badge">Featured</span>
+                    <h1>Discover the World of Pokémon</h1>
+                    <p>Embark on an epic journey with your favorite Pokémon partners across new regions.</p>
+                    <a href="#" class="btn btn-yellow">Explore Now</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- News Section -->
+        <section id="news" class="section news-section">
+            <div class="container">
+                <div class="section-top">
+                    <h2><span class="accent-bar"></span> Latest Pokémon News</h2>
+                    <a href="#" class="link-arrow">See All News →</a>
+                </div>
+
+                <div class="news-grid">
+                    <article class="news-card featured">
+                        <div class="news-img">
+                            <img src="assets/news_1.jpg" alt="Championship Battle Season">
+                            <span class="badge">Featured</span>
+                        </div>
+                        <div class="news-body">
+                            <span class="category">Competitive</span>
+                            <h3>Championship Battle Season 2026 Kicks Off!</h3>
+                            <p>The biggest competitive season yet is here. Register now and prove you're the very best.</p>
+                            <span class="date">September 18, 2026</span>
+                        </div>
+                    </article>
+
+                    <article class="news-card">
+                        <div class="news-img">
+                            <img src="assets/news_2.jpg" alt="Mysterious Pokémon">
+                        </div>
+                        <div class="news-body">
+                            <span class="category">Discovery</span>
+                            <h3>A Mysterious New Pokémon Has Been Spotted!</h3>
+                            <p>Trainers report sightings of a shadowy new creature in the wild.</p>
+                            <span class="date">September 15, 2026</span>
+                        </div>
+                    </article>
+
+                    <article class="news-card">
+                        <div class="news-img">
+                            <img src="assets/news_3.jpg" alt="Starter Pokémon">
+                        </div>
+                        <div class="news-body">
+                            <span class="category">Guide</span>
+                            <h3>Choose Your Starter: A Beginner's Guide</h3>
+                            <p>Everything you need to know about picking your first partner.</p>
+                            <span class="date">September 12, 2026</span>
+                        </div>
+                    </article>
+
+                    <article class="news-card">
+                        <div class="news-img">
+                            <img src="assets/news_4.jpg" alt="New Adventure">
+                        </div>
+                        <div class="news-body">
+                            <span class="category">Games</span>
+                            <h3>New Pokémon Adventure Game Announced for 2027</h3>
+                            <p>An all-new open-world Pokémon experience is on the horizon.</p>
+                            <span class="date">September 10, 2026</span>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- Pokédex Section -->
+        <section id="pokedex" class="section pokedex-section">
+            <div class="container pokedex-grid">
+                <div class="pokedex-info">
+                    <span class="label-outline">Pokédex</span>
+                    <h2>Explore the Pokédex!</h2>
+                    <p>Search for a Pokémon by name or using its National Pokédex number. Learn about type, abilities, stats, and more!</p>
+                    <div class="search-bar">
+                        <input type="text" placeholder="Search Pokémon...">
+                        <button type="button">🔍</button>
+                    </div>
+                    <a href="#" class="link-arrow light">Open Full Pokédex →</a>
+                </div>
+                <div class="pokedex-card-wrapper">
+                    <div class="pokedex-device">
+                        <div class="poke-screen">
+                            <span class="poke-number">#025</span>
+                            <div class="poke-icon">⚡</div>
+                            <h3>Pikachu</h3>
+                            <span class="type-pill electric">Electric</span>
+                            <div class="stats">
+                                <div class="stat"><span>HP</span><div class="bar"><div class="fill" style="width:55%"></div></div></div>
+                                <div class="stat"><span>ATK</span><div class="bar"><div class="fill" style="width:60%"></div></div></div>
+                                <div class="stat"><span>DEF</span><div class="bar"><div class="fill" style="width:45%"></div></div></div>
+                                <div class="stat"><span>SPD</span><div class="bar"><div class="fill" style="width:80%"></div></div></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="floating-icons">
+                        <span class="fi fi-1">🔥</span>
+                        <span class="fi fi-2">💧</span>
+                        <span class="fi fi-3">🌿</span>
+                        <span class="fi fi-4">🔮</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Video Games Section -->
+        <section id="games" class="section games-section">
+            <div class="container">
+                <div class="section-top">
+                    <h2><span class="accent-bar"></span> Pokémon Video Games</h2>
+                    <a href="#" class="link-arrow">All Video Games →</a>
+                </div>
+
+                <div class="games-grid">
+                    <a href="#" class="game-card big">
+                        <img src="assets/game_scarlet.jpg" alt="Pokémon Scarlet & Violet" class="game-card-img">
+                        <div class="game-card-overlay"></div>
+                        <div class="game-card-text">
+                            <span class="platform">Nintendo Switch</span>
+                            <h3>Pokémon Scarlet & Violet</h3>
+                            <p>Explore the open world of Paldea in the latest mainline Pokémon adventure.</p>
+                            <span class="game-btn">Learn More</span>
+                        </div>
+                    </a>
+                    <a href="#" class="game-card">
+                        <img src="assets/game_go.jpg" alt="Pokémon GO" class="game-card-img">
+                        <div class="game-card-overlay"></div>
+                        <div class="game-card-text">
+                            <span class="platform">Mobile</span>
+                            <h3>Pokémon GO</h3>
+                            <p>Find Pokémon in the real world!</p>
+                            <span class="game-btn">Play Now</span>
+                        </div>
+                    </a>
+                    <a href="#" class="game-card">
+                        <img src="assets/game_unite.jpg" alt="Pokémon UNITE" class="game-card-img">
+                        <div class="game-card-overlay"></div>
+                        <div class="game-card-text">
+                            <span class="platform">Mobile & Switch</span>
+                            <h3>Pokémon UNITE</h3>
+                            <p>Team up in 5v5 strategic battles.</p>
+                            <span class="game-btn">Play Free</span>
+                        </div>
+                    </a>
+                    <a href="#" class="game-card">
+                        <img src="assets/game_legends.jpg" alt="Pokémon Legends" class="game-card-img">
+                        <div class="game-card-overlay"></div>
+                        <div class="game-card-text">
+                            <span class="platform">Nintendo Switch</span>
+                            <h3>Pokémon Legends</h3>
+                            <p>An action-RPG set in the ancient past.</p>
+                            <span class="game-btn">Discover</span>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Trading Card Game Section -->
+        <section id="tcg" class="section tcg-section">
+            <div class="container">
+                <div class="section-top light">
+                    <h2><span class="accent-bar"></span> Pokémon Trading Card Game</h2>
+                    <a href="#" class="link-arrow light">Explore TCG →</a>
+                </div>
+
+                <div class="tcg-grid">
+                    <div class="tcg-card">
+                        <div class="tcg-top">
+                            <img src="assets/tcg_fire.jpg" alt="Charizard" class="tcg-img">
+                        </div>
+                        <div class="tcg-bottom">
+                            <h4>Charizard EX</h4>
+                            <span>✦✦✦ Ultra Rare</span>
+                        </div>
+                    </div>
+                    <div class="tcg-card">
+                        <div class="tcg-top">
+                            <img src="assets/tcg_water.jpg" alt="Blastoise" class="tcg-img">
+                        </div>
+                        <div class="tcg-bottom">
+                            <h4>Blastoise GX</h4>
+                            <span>✦✦ Rare</span>
+                        </div>
+                    </div>
+                    <div class="tcg-card">
+                        <div class="tcg-top grass">
+                            <img src="assets/news_3.jpg" alt="Venusaur" class="tcg-img">
+                        </div>
+                        <div class="tcg-bottom">
+                            <h4>Venusaur V</h4>
+                            <span>✦✦ Rare</span>
+                        </div>
+                    </div>
+                    <div class="tcg-card">
+                        <div class="tcg-top electric-bg">
+                            <img src="assets/hero_banner_2.jpg" alt="Pikachu" class="tcg-img">
+                        </div>
+                        <div class="tcg-bottom">
+                            <h4>Pikachu VMAX</h4>
+                            <span>✦✦✦ Ultra Rare</span>
+                        </div>
+                    </div>
+                    <div class="tcg-card">
+                        <div class="tcg-top psychic">
+                            <img src="assets/news_2.jpg" alt="Mewtwo" class="tcg-img">
+                        </div>
+                        <div class="tcg-bottom">
+                            <h4>Mewtwo EX</h4>
+                            <span>✦✦✦ Secret Rare</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="tcg-buttons">
+                    <a href="#" class="btn btn-yellow">Play TCG Live</a>
+                    <a href="#" class="btn btn-outline">Browse Card Database</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Newsletter Section -->
+        <section class="section newsletter-section">
+            <div class="container newsletter-inner">
+                <h2>Join the Pokémon Trainer Club!</h2>
+                <p>Get the latest news, special offers, and exclusive content delivered to your inbox.</p>
+                <form class="newsletter-form" action="#" method="post">
+                    <input type="email" placeholder="Enter your email address" required>
+                    <button type="submit" class="btn btn-yellow">Sign Up</button>
+                </form>
+                <div class="perks">
+                    <span>🎁 Exclusive Rewards</span>
+                    <span>📬 Latest News First</span>
+                    <span>🏅 Tournament Access</span>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <span class="logo-text small">Pokémon</span>
+                    <p>Gotta Catch 'Em All!</p>
+                    <div class="socials">
+                        <a href="#" aria-label="Facebook">FB</a>
+                        <a href="#" aria-label="Twitter">X</a>
+                        <a href="#" aria-label="Instagram">IG</a>
+                        <a href="#" aria-label="YouTube">YT</a>
+                    </div>
+                </div>
+                <div class="footer-col">
+                    <h4>Pokémon</h4>
+                    <a href="#">Pokédex</a>
+                    <a href="#">News</a>
+                    <a href="#">Pokémon TV</a>
+                    <a href="#">Play! Pokémon</a>
+                    <a href="#">Parents Guide</a>
+                </div>
+                <div class="footer-col">
+                    <h4>Games</h4>
+                    <a href="#">Scarlet & Violet</a>
+                    <a href="#">Pokémon Legends</a>
+                    <a href="#">Pokémon GO</a>
+                    <a href="#">Pokémon UNITE</a>
+                    <a href="#">All Games</a>
+                </div>
+                <div class="footer-col">
+                    <h4>TCG</h4>
+                    <a href="#">Card Database</a>
+                    <a href="#">TCG Live</a>
+                    <a href="#">Expansions</a>
+                    <a href="#">Rules</a>
+                    <a href="#">Find a League</a>
+                </div>
+                <div class="footer-col">
+                    <h4>Account</h4>
+                    <a href="#">Trainer Club</a>
+                    <a href="#">Support</a>
+                    <a href="#">Terms of Use</a>
+                    <a href="#">Privacy</a>
+                    <a href="#">Accessibility</a>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>©2026 Pokémon. ©1995–2026 Nintendo / Creatures Inc. / GAME FREAK inc.</p>
+                <div class="footer-links">
+                    <a href="#">Terms</a>
+                    <a href="#">Privacy</a>
+                    <a href="#">Cookies</a>
+                    <a href="#">Legal</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>
